@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elegant To-Do List</title>
+  <link rel="stylesheet" href="Task2.css" />
+</head>
+<body>
+  <div class="app-container">
+    <h1>📝 My To-Do List</h1>
+
+    <!-- Motivational Quote -->
+    <div id="quote"></div>
+
+    <!-- Input Section -->
+    <div class="input-group">
+      <input type="text" id="task-input" placeholder="Add a new task..." />
+      <button id="add-btn">Add</button>
+    </div>
+
+    <!-- Filters -->
+    <div class="filters">
+      <button onclick="filterTasks('all')">All</button>
+      <button onclick="filterTasks('completed')">Completed</button>
+      <button onclick="filterTasks('pending')">Pending</button>
+    </div>
+
+    <!-- Task List -->
+    <ul id="task-list"></ul>
+
+    <!-- Task Counter -->
+    <div id="task-counter"></div>
+
+    <!-- Extra Controls -->
+    <div class="controls">
+      <button id="clear-btn">Clear All</button>
+      <button id="theme-toggle">🌙 Toggle Theme</button>
+    </div>
+  </div>
+
+  <script src="Task2.js"></script>
+</body>
